@@ -1,0 +1,100 @@
+.picture-on-the-left {
+    height: 720px;
+    &__wrapper {
+        display: flex;
+    }
+    &__img {
+        position: relative;
+    }
+    &__block {
+        position: absolute;
+        width: 453px;
+        height: 243px;
+        padding: 25px 31px 35px 32px;
+        background-color: #fff;
+        border-radius: 8px;
+        bottom: -65px;
+        right: -40px;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+        &-descr {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #4D533C;
+        }
+        &-signature {
+            display: flex;
+            margin-top: 37px;
+            margin-left: 31px;
+        }
+        &-img {
+            width: 46px;
+            height: 46px;
+            box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+            img {
+                width: 100%;
+            }
+        }
+        &-text {
+            margin-left: 14px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #4D533C;
+            margin-bottom: 4px;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #152934;
+        }
+    }
+    &__card {
+        height: 210px;
+        padding: 30px 33px 30px 30px;
+        bottom: -40px;
+        &-signature {
+            margin-top: 24px;
+            margin-left: 0;
+        }
+    }
+    &__text {
+        margin-top: 80px;
+        margin-left: 96px;
+        width: 475px;
+        padding-right: 54px;
+        &-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            color: #4D533C;
+        }
+        &-descr {
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(33, 56, 66, 0.6);
+        }
+        &-btn {
+            margin-top: 90px;
+            margin-left: 15px;
+            position: relative;
+            @include gray_triangle;
+            a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-decoration-line: underline;
+                color: #D4D6D4;
+            }
+        }
+        &-button {
+            margin-top: 116px;
+        }
+    }
+}

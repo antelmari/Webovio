@@ -1,0 +1,117 @@
+.services {
+    height: 820px;
+    &__block {
+        height: 160px;
+        margin-top: -60px;
+    }
+    &__one {
+        width: 50%;
+        height: 160px;
+        background-color: #fff;
+        padding-left: 65px;
+        padding-top: 25px;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    }
+    &__two {
+        position: absolute;
+        margin-top: -160px;
+        left: 50%;
+        width: 50%;
+        height: 160px;
+        background-color: #fff;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+        z-index: 1;
+    }
+    &__clients {
+        position: absolute;
+        width: 1050px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        img {
+            width: 156px;
+        }
+    }
+    &__info {
+        margin-top: 120px;
+        &-subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(77, 83, 60, 0.9);
+        }
+        &-title {
+            margin-top: 29px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+            color: #4D533C;
+        }
+        &-descr {
+            margin-top: 35px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+            color: rgba(33, 56, 66, 0.6);
+        }
+        &-btn {
+            margin-top: 41px;
+            margin-left: 15px;
+            position: relative;
+            @include gray_triangle;
+            a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #D4D6D4;
+            }
+        }
+    }
+    &__card {
+        height: 520px;
+        box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+        padding: 120px 25px 60px 40px;
+        &-descr {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            color: #4D533C;
+        }
+        &-signature {
+            margin-top: 50px;
+            display: flex;
+        }
+        &-img {
+            width: 90px;
+            height: 90px;
+            box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+            img {
+                width: 100%;
+            }
+        }
+        &-text {
+            margin-left: 30px;
+        }
+        &-title {
+            margin-top: 14px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 33px;
+            color: #4D533C;
+        }
+        &-subtitle {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #152934;
+        }
+    }
+    &__divider {
+        margin-top: 150px;
+        height: 1px;
+        background: rgba(33, 56, 66, 0.0955529);
+    }
+}

@@ -1,0 +1,68 @@
+.promo {
+    height: 100vh;
+    background: url(../img/bg.jpg) center (center / cover) no-repeat;
+    padding-top: 24px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 258px;
+        height: 40px;
+        img {
+            width: 100%;
+        }
+    }
+    &__hamburger {
+        width: 40px;
+        height: 40px;
+        background-color: #F5F6F7;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        span {
+            margin-top: 1px;
+            margin-bottom: 1px;
+            width: 18px;
+            height: 2px;
+            background-color: #000;
+        }
+    }
+    &__wrapper {
+        color: #fff;
+        margin-top: 100px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__title {
+        margin-top: 22px;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 74px;
+    }
+    &__descr {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__btn {
+        margin-top: 45px;
+        margin-left: 15px;
+        position: relative;
+        @include yellow_triangle;
+        a {
+            color: #FFD723;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-decoration-line: underline;
+        }
+    }
+}
